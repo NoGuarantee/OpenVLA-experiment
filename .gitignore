@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+outputs/
+*.egg-info/
+dist/
+build/
+.wandb/
+
+# Временные превью (пересоздаются из ноутбука)
+images/composite_dx_*.png
