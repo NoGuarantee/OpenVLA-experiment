@@ -2,6 +2,8 @@
 
 Проверка, как меняется предсказание OpenVLA при горизонтальном сдвиге объекта на кадре.
 
+Подробный [анализ статьи и объяснение эксперимента](https://docs.google.com/document/d/1Z0UAn6_WgXBQhB6AnzphfZ-qDU6uLkJHtQPoEhB-Q8M/edit?usp=sharing)
+
 ## Файлы
 
 | Путь | Назначение |
@@ -28,11 +30,3 @@ source .venv/bin/activate
 ```bash
 jupyter notebook experiment.ipynb
 ```
-
-Результаты sweep (опционально) сохраняются в `outputs/shift_sweep/` — каталог в `.gitignore`.
-
-## Пайплайн
-
-1. Маска → bbox и вырез объекта с альфой.
-2. Для каждого `dx` объект вставляется на `image_background.png`.
-3. `predict_action` с фиксированным промптом; сравнение 7 компонент действия на графиках.
